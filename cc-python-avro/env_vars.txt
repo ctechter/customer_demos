@@ -1,0 +1,19 @@
+# Confluent Cloud configuration settings
+# Do not include 'https://' in the BOOTSTRAP URL
+BOOTSTRAP_URL=<<CONFLUENT CLOUD BOOTSTRAP URL>>
+CLUSTER_API_KEY=<<CONFLUENT CLOUD API KEY>>
+CLUSTER_API_SECRET=<<CONFLUENT CLOUD API SECRET>>
+SR_BOOTSTRAP_URL=<<SCHEMA REGISTRY BOOTSTRAP URL>>
+SR_API_KEY=<SCHEMA REGISTRY API KEY>>
+SR_API_SECRET=<<SCHEMA REGISTRY API SECRET>>
+
+# 'Misc' configuration settings
+SCHEMA_PATH=avro_schema.py
+TOPIC=test-python
+
+# If using the Confluent Cloud standard cluster created
+# via Terrafrom included with this project
+# the GROUP_ID MUST start with 'consumer' as the cluster
+# RBAC is setup to provide DeveloperRead access to
+# any consumer group that starts with 'consumer*'
+GROUP_ID=consumer-group-python-test

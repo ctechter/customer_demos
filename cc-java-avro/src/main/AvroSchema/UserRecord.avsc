@@ -1,0 +1,10 @@
+{
+    "type": "record",
+    "name": "UserRecord",
+    "namespace": "com.example.confluent.model",
+    "fields": [
+        {"name": "id", "type": "string"},
+        {"name": "username", "type": "string"},
+        {"name": "email", "type": "string"}
+    ]
+}

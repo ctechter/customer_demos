@@ -1,0 +1,10 @@
+{
+    "namespace": "io.confluent.developer",
+    "type": "record",
+    "name": "User",
+    "fields": [
+      {"name": "id", "type": "string"},
+      {"name": "name", "type": "string"},
+      {"name": "email", "type": "string"}
+    ]
+  }
