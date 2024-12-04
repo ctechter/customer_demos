@@ -16,12 +16,7 @@ This project demonstrates using the Apache Kafka Java Client to produce and cons
     1. File location of the client.properties file
 
 ## Prerequisites:
-- Java 17
-    - Any newer versions of Java may encounter a compile/run-time execution error.  
-    - To check and, if needed, explicitly set your java version to 17 run the following commands:
-        1. `java -version`
-        2. `export JAVA_HOME=/usr/libexec/java_home -v 17.0`
-        3. `java -version` (should see version 17 listed)
+- Java 17 (Any newer versions of Java may encounter a compile/run-time execution error)  
 - Maven
 - All required configuration settings can be found and, if needed, modified in the `/src/main/resources/client.properties` file.
 - Java Producer; the topic in the `topic.name` property within the `client.properties` file must exist.  If it does not exist then create the topic in your Confluent Cloud cluster before running the application.
