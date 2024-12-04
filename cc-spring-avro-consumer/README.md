@@ -11,12 +11,7 @@ This Spring Boot Consumer project is designed to demonstrate how spring boot can
 
 ## Prerequisites
 - Spring boot version 3.3.5 (the version this project was written/compiled)
-- Java 17
-- Any newer versions of Java may encounter a compile/run-time execution error.  
-    - To check and, if needed, explicitly set your java version to 17 run the following commands:
-        1. `java -version`
-        2. export JAVA_HOME=`/usr/libexec/java_home -v 17.0`
-        3. `java -version (should see version 17 listed)`
+- Java 17 (Any newer versions of Java may encounter a compile/run-time execution error)
 - Maven
 - All required configuration settings can be found and, if needed, modified in the `/src/main/resources/application.properties' file.
 - The topic name provided in the `application.properties` file under the `topic.name` variable should be the same as the topic used for the spring boot producer application.  If this property was modified when executing the spring boot producer make sure the topic name is changed accordingly.
