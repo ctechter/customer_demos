@@ -35,8 +35,9 @@ The python producer takes as a command-line input a file that contains a JSON-fo
 
 ## Running the Python client Producer
 These commands are executed from within the root cc-python-avro folder:
-1. `source env_vars.txt` [or location of file holding required environment variables]
-2. Create the virtual environment: `virtualenv ccloud-env`
+1. Enter the required information in `env_vars.txt`
+2. Rename the `env_vars.txt` file to `.env`
+3. Create the virtual environment: `virtualenv ccloud-env`
 4. `source ccloud-env/bin/activate`
 5. `pip install confluent-kafka requests avro-python3 fastavro python-dotenv`
 6. `python Producer_Avro.py avro_message.json`
