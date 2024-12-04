@@ -40,7 +40,7 @@ These commands are executed from within the root cc-python-avro folder:
 4. `source ccloud-env/bin/activate`
 5. `pip install confluent-kafka requests avro-python3 fastavro python-dotenv`
 6. `python Producer_Avro.py avro_message.json`
-7. `python ccloud-env/bin/deactivate`
+7. `deactivate`
 
 ## Running the Python client Consumer
 These commands are executed from within the root cc-python-avro folder:
@@ -50,4 +50,4 @@ These commands are executed from within the root cc-python-avro folder:
 5. `pip install confluent-kafka requests avro-python3 fastavro python-dotenv`
 6. `python Consumer_Avro.py`
 7. type `ctrl+c` to cancel the consumer
-8. `python ccloud-env/bin/deactivate`
+8. `deactivate`
