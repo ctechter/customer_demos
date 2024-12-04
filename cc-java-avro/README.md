@@ -24,7 +24,7 @@ This project demonstrates using the Apache Kafka Java Client to produce and cons
         3. `java -version` (should see version 17 listed)
 - Maven
 - All required configuration settings can be found and, if needed, modified in the `/src/main/resources/client.properties` file.
-- Java Producer; the topic in the `topic.name` property within the `client.properties` file must exist.  If it does not exist then create the topic in Confluent Cloud before running the application.
+- Java Producer; the topic in the `topic.name` property within the `client.properties` file must exist.  If it does not exist then create the topic in your Confluent Cloud cluster before running the application.
 - Java Consumer; if using the Terraform scripts provided with this project the consumer name in the `group.id` property within the `client.properties` file must start with `consumer` or else a RBAC error will occur when connecting to Confluent Cloud.
 
 ## Running the java client Producer
@@ -38,7 +38,7 @@ This project demonstrates using the Apache Kafka Java Client to produce and cons
 
 ## Running the java client Consumer
 1. Rename the `client_sample.properties` file  in the `src/main/resources` directory to `client.properties`
-2. Fill in all required confluent cloud connection and API key/secret values in the client.properties file
+2. Fill in all required confluent cloud connection and API key/secret values in the `client.properties` file
 3. `mvn clean install`
 4. Using Maven:
    `mvn exec:java -Dexec.mainClass="io.developer.confluent.ccJavaAvroClientApp" -Dexec.args="--consumer src/main/resources/client.properties"`
