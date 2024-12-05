@@ -32,7 +32,7 @@ This project demonstrates using the Apache Kafka Java Client to produce and cons
    `java -jar target/java-ccloud-avro-1.0.jar --producer src/main/AvroSchema/UserRecord.avsc src/main/messages/avro_message.json src/main/resources/client.properties`
 
 ## Running the java client Consumer
-1. Rename the `client_sample.properties` file  in the `src/main/resources` directory to `client.properties`
+1. Rename the `client.sample_properties` file  in the `src/main/resources` directory to `client.properties`
 2. Fill in all required confluent cloud connection and API key/secret values in the `client.properties` file
 3. `mvn clean install`
 4. Using Maven:
